@@ -1,14 +1,37 @@
-body {
-  color: blue;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-p,
-li {
+body {
+  /* color: blue; */
+  /* margin: 0; */
   font-family: sans-serif;
+}
+
+.main-header {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* shortWAY */
+  /* margin: 0 auto; */
+}
+
+.main-header {
+  background-color: #bebebe;
+  margin-bottom: 40px;
+  /* height: 70px; */
+  padding: 20px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+.post-image {
+  height: auto;
+  position: relative;
 }
 
 h1 {
@@ -19,8 +42,9 @@ h1 {
   color: rgba(80, 175, 96, 0.705);
 }
 
-.main-header {
-  background-color: #bebebe;
+nav a:link {
+  margin: 20px;
+  display: block;
 }
 
 h1,
@@ -32,11 +56,13 @@ h3 {
 h2 {
   font-size: 40px;
   font-family: sans-serif;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
   font-family: sans-serif;
+  margin-bottom: 40px;
 }
 
 h4 {
@@ -50,11 +76,18 @@ p {
   font-size: 22px;
   font-family: sans-serif;
   line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
 }
 
 li {
   font-family: sans-serif;
   font-size: 20px;
+  margin-bottom: 10px;
 }
 
 article header p {
@@ -75,6 +108,8 @@ aside {
   background-color: #b7b7b7;
   border-top: 5px solid #3bb850a6;
   border-bottom: 5px solid #3bb850a6;
+  width: 500px;
+  /* position: relative; */
 }
 
 li:first-child {
@@ -90,10 +125,6 @@ article p:first-child {
   color: red;
 }
 
-article header:first-child {
-  background-color: rgb(107, 163, 75);
-}
-
 a:link {
   color: #3fb835;
   text-decoration: none;
@@ -107,4 +138,45 @@ a:hover {
 nav a:link,
 nav p {
   font-size: 18px;
+}
+
+.like-button {
+  font-size: 22px;
+  padding: 20px;
+
+  position: absolute;
+  cursor: pointer;
+  /* top: 400px;
+  left: 50px; */
+
+  bottom: 50px;
+  right: 50px;
+}
+
+P::first-line {
+  color: red;
+}
+
+h3 + p {
+  font-size: 22px;
+}
+
+h2 {
+  background-color: orange;
+}
+
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: 'TOP';
+  background-color: yellow;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
