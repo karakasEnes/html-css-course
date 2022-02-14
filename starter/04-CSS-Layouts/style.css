@@ -2,6 +2,7 @@
   /* border-top: 10px solid #1098ad; */
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* PAGE SECTIONS */
@@ -50,7 +51,7 @@ aside {
   border-bottom: 5px solid #1098ad;
   /* padding-top: 50px;
   padding-bottom: 50px; */
-  padding: 50px 0;
+  padding: 50px 50px;
   width: 500px;
 }
 
@@ -232,7 +233,7 @@ h2 {
 }
 
 h2::before {
-  content: "TOP";
+  content: 'TOP';
   background-color: #ffe70e;
   color: #444;
   font-size: 16px;
@@ -265,3 +266,49 @@ footer p {
 nav p {
   font-size: 18px;
 } */
+
+/* FLOATS */
+
+.author-img {
+  float: left;
+}
+
+.author {
+  padding-left: 40px;
+  float: left;
+}
+
+header h1 {
+  float: left;
+}
+
+header nav {
+  float: right;
+}
+
+.main-header {
+  background-color: rgb(161, 161, 160);
+}
+
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+article {
+  /* background-color: green; */
+  width: 450px;
+  float: left;
+}
+
+aside {
+  /* background-color: red; */
+  width: 300px;
+  float: right;
+}
+
+footer {
+  /* background-color: yellow; */
+  clear: both;
+}
