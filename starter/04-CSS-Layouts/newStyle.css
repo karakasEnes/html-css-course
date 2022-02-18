@@ -332,7 +332,9 @@ header nav {
   width: 1200px;
 }
 
-.row {
+/* FLEX */
+
+/* .row {
   display: flex;
   gap: 75px;
 }
@@ -345,4 +347,6 @@ aside {
 article {
   flex: 1;
   margin-bottom: 0;
-}
+} */
+
+/* GRID */
