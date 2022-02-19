@@ -350,3 +350,26 @@ article {
 } */
 
 /* GRID */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+}
+
+.main-header {
+  grid-column: 1 / -1;
+}
+
+aside {
+  grid-row: 2;
+  align-self: start;
+}
+
+article {
+  grid-row: 2;
+}
+footer {
+  background-color: #1098ad;
+  grid-column: 1 / -1;
+}
